@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>register</title>
+<meta charset="utf-8">
+<link rel="stylesheet"  href="css/stylesForRegister.css">
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript">
+	document.getElementById('name2').select();
+</script>
+</head>
+<style>
+	* {
+  		box-sizing: border-box;
+	}
+	h1 {
+  		text-align: center;
+  		text-transform: uppercase;
+  		color: #FCFAF2;
+  		font-weight:900;
+	}	
+	
+	div.square {
+		position:absolute;
+		border-radius: 10px;
+		left: 33%;
+  		bottom: 47%;
+  		height: 300px;
+  		width: 500px;
+  		background-color: #D7C4BB;
+  		color : #B5495B
+	}
+
+	article {
+		position: relative;
+  		float: left;
+  		padding: 20px;
+  		width: 100%;
+  		height: 850px; /* only for demonstration, should be removed */
+  		position: relative;
+	}
+	#lastname {
+    	text-align: center; 
+    	margin:5px;
+    	width: 40px;
+    	border-radius: 5px;
+	}
+	#firstname {
+    	text-align: center; 
+    	margin:5px
+    	width:120px;
+    	border-radius: 5px;
+	}
+	#mail{
+		text-align: center; 
+    	margin:5px;
+    	width: 200px;
+    	border-radius: 5px;
+	}
+	#passward{
+		text-align: center; 
+    	margin:5px;
+    	width: 200px;
+    	border-radius: 5px;
+	}
+	#repassward{
+		text-align: center; 
+    	margin:5px;
+    	width: 200px;
+    	border-radius: 5px;
+	}
+
+</style>
+
+<body>
+<body background="img/wallpaper2.jpg">
+<article>
+	<div class="square">
+		<form name="myform" align="center";>
+            <br><h1>註冊帳號</h1>
+			<label for = 'lastname'>姓
+			<input id = 'lastname' type="text" name="lastname">
+			<label for = 'firstname'>名字
+			<input id = 'firstname' type="text" name="firstname">
+			<br>
+			<label for = 'mail'>電子郵件
+			<input id = 'mail' type="text" name="mail">
+			<br>
+			<label for = 'passward'>設定密碼
+			<input id = 'passward' type="text" name="passward">
+			<br>
+			<label for = 'repassward'>確認密碼
+			<input id = 'repassward' type="text" name="repassward">
+			<br><br>
+			<input type="button" value="取消" onclick="location.href='要前往的網頁連結'">
+			&nbsp  &nbsp
+			<input type="button" value="註冊" onclick="location.href='要前往的網頁連結'">
+			<input type="submit" value="登入">
+	</div>
+</article>	
+
+	
+</div>
+ 	
+</div>
+
+</body>
+</html>

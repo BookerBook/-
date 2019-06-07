@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>register</title>
+<meta charset="utf-8">
+<link rel="stylesheet"  href="css/stylesForRegister.css">
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript">
+	document.getElementById('name2').select();
+</script>
+</head>
+<style>
+	* {
+  		box-sizing: border-box;
+	}
+	h1 {
+  		text-align: center;
+  		text-transform: uppercase;
+  		color: #FCFAF2;
+  		font-weight:900;
+	}	
+	
+	div.square {
+		position:absolute;
+		border-radius: 10px;
+		left: 33%;
+  		bottom: 32%;
+  		height: 300px;
+  		width: 500px;
+  		background-color: #D7C4BB;
+  		color : #B5495B
+	}
+
+	}
+	article {
+		position: relative;
+  		float: left;
+  		padding: 20px;
+  		width: 100%;
+  		height: 850px; /* only for demonstration, should be removed */
+  		position: relative;
+	}
+	#user {
+    	text-align: center; 
+    	margin:5px;
+    	border-radius: 5px;
+	}
+	#passward {
+    	text-align: center; 
+    	margin:5px;
+    	border-radius: 5px;
+	}
+</style>
+
+<body>
+<body background="img/wallpaper2.jpg">
+<article>
+	<div class="square">
+		<form name="myform" align="center";>
+			<br><br><h1>帳號登入</h1>
+			<br>
+			<label for = 'user'>帳號
+			<input id = 'user' type="text" name="user">
+			<br>
+			<label for = 'passward'>密碼
+			<input id = 'passward' type="text" name="passward">
+			<br><br>
+			<input type="button" value="取消" onclick="location.href='要前往的網頁連結'">
+			<input type="button" value="註冊" onclick="location.href='要前往的網頁連結'">
+			<input type="submit" value="登入">
+	</div>
+</article>	
+
+	
+</div>
+ 	
+</div>
+
+</body>
+</html>
