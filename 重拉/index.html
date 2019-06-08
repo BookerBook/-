@@ -7,71 +7,90 @@
 <html>
 	<head>
 		<title>Monochromed by TEMPLATED</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<script src="js/init.js"></script>
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 		</noscript>
 		<style>
+		* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+			header {
+				position: relative;
+				width:100%;
+				height: 450px;
+			}
 			article {
   				float: left;
-  				padding: 20px;
+  				
   				width: 70%;
-  				background-color: #FCFAF2;
+  				background-color: red;
   				height: 850px; /* only for demonstration, should be removed */
-  				position: relative;
+  				
 			}
 			navleft {
   				height: 850px; /* only for demonstration, should be removed */
-  				background: #FCFAF2;
+  				background: black;
   				padding: 20px;
   				float:left;
   				width:15%;
 			}
 			navright {
 				height: 850px; /* only for demonstration, should be removed */
-  				background: #FCFAF2;
-  				padding: 20px;
+  				background: blue;
+  	
   				float:right;
   				width:15%;
+			}
+			footer {
+				background-color: #DB4D6D;
+				padding: 10px;
+				text-align: center;
+				color: white;
+			}
+			div.square {
+				position:absolute;
+				border-radius: 10px;
+				left: 40%;
+		  		bottom: 20%;
+		  		height: 50px;
+		  		width: 400px;
+		  		background-color:white;
+		  		color: #808F7C;
+		  		opacity: 0.9;
+		  		float: center;
+		  		/*background-color: #D7C4BB;
+		  		color : #B5495B*/
 			}
 		</style>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
 
-	<body class="homepage">
+	<body class="homepage" style="margin:0;padding: 0;">
 
 	<!-- Header -->
-		<div id="header">
-			<div class="container">
-					
-				<!-- Logo -->
-					<div id="logo">
-						<h1><a href="#">公館好食</a></h1>
-						<span>Enjoy eating, better lifestyle</span>
-					</div>
-				
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li class="active"><a href="index.html">餐廳列表</a></li>
-							<li><a href="threecolumn.html">搜尋</a></li>
-							<li><a href="twocolumn1.html">關於我們</a></li>
-							<li><a href="onecolumn.html">登入</a></li>
-						</ul>
-					</nav>
-
-			</div>
+	<header>
+		<header  style="background-size: cover;">
+			<img src="img/23511.jpg" height="100%" width="100%">
+		<div class="square">
+			<ul>
+				<li class="active"><a href="index.html">餐廳列表</a></li>
+				<li><a href="threecolumn.html">搜尋</a></li>
+				<li><a href="twocolumn1.html">關於我們</a></li>
+				<li><a href="onecolumn.html">登入</a></li>
+			</ul>
 		</div>
+
+	</header>
 	<!-- Header -->
 	<!-- article -->
 	<navleft></navleft>
@@ -79,11 +98,7 @@
 	<navright></navright>
 	<!-- article -->
 	<!-- Copyright -->
-		<div id="copyright">
-			<div class="container">
-				公館好食 食之有味
-			</div>
-		</div>
+
 
 	</body>
 </html>
