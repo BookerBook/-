@@ -16,19 +16,23 @@
 	h1 {
   		text-align: center;
   		text-transform: uppercase;
-  		color: #FCFAF2;
+  		color: black;
   		font-weight:900;
+  		font-size: 40px;
 	}	
 	
 	div.square {
 		position:absolute;
 		border-radius: 10px;
-		left: 33%;
-  		bottom: 32%;
+		left: 67%;
+  		bottom: 50%;
   		height: 300px;
-  		width: 500px;
-  		background-color: #D7C4BB;
-  		color : #B5495B
+  		width: 400px;
+  		background-color:white;
+  		color: #808F7C;
+  		opacity: 0.9;
+  		/*background-color: #D7C4BB;
+  		color : #B5495B*/
 	}
 
 	}
@@ -50,24 +54,57 @@
     	margin:5px;
     	border-radius: 5px;
 	}
+	.button {
+	    display: inline-block;
+	    text-align: center;
+	    vertical-align: middle;
+	    padding: 4px 12px;
+	    border: 0px solid #c2373c;
+	    border-radius: 13px;
+	    background: #ff5a62;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#ff5a62), to(#c2373c));
+	    background: -moz-linear-gradient(top, #ff5a62, #c2373c);
+	    background: linear-gradient(to bottom, #ff5a62, #c2373c);
+	    font: normal normal bold 22px georgia;
+	    color: #ffffff;
+	    text-decoration: none;
+	}
+	.button:hover,
+	.button:focus {
+	    border: 0px solid ##f3454b;
+	    background: #ff6c76;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#ff6c76), to(#e94248));
+	    background: -moz-linear-gradient(top, #ff6c76, #e94248);
+	    background: linear-gradient(to bottom, #ff6c76, #e94248);
+	    color: #ffffff;
+	    text-decoration: none;
+	}
+	.button:active {
+	    background: #c2373c;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#c2373c), to(#c2373c));
+	    background: -moz-linear-gradient(top, #c2373c, #c2373c);
+	    background: linear-gradient(to bottom, #c2373c, #c2373c);
+	}
+
 </style>
 
 <body>
-<body background="img/wallpaper2.jpg">
+<body background="img/background.jpg" style="background-size: cover;">
 <article>
 	<div class="square">
 		<form name="myform" align="center";>
-			<br><br><h1>帳號登入</h1>
-			<br>
+			<br><h1>帳號登入</h1>
+			
 			<label for = 'user'>帳號
 			<input id = 'user' type="text" name="user">
 			<br>
 			<label for = 'passward'>密碼
 			<input id = 'passward' type="text" name="passward">
 			<br><br>
-			<input type="button" value="取消" onclick="location.href='要前往的網頁連結'">
-			<input type="button" value="註冊" onclick="location.href='要前往的網頁連結'">
-			<input type="submit" value="登入">
+			<br>
+			<input class="button" type="reset" value="清除">&nbsp&nbsp
+			<input class="button" type="button" value="註冊" onclick="location.href='要前往的網頁連結'">&nbsp&nbsp
+			<input class="button" type="submit" value="登入">
 	</div>
 </article>	
 
